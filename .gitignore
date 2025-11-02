@@ -1,0 +1,10 @@
+﻿node_modules/
+.expo/
+dist/
+build/
+android/
+ios/
+*.apk
+*.aab
+.env
+.expo-shared/

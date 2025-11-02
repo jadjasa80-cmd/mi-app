@@ -1,0 +1,42 @@
+{
+  "cli": {
+    "version": ">= 16.24.1",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "apk": {
+      "android": { "buildType": "apk" },
+      "env": {
+        "NODE_VERSION": "20.19.4",
+        "YARN_IGNORE_ENGINES": "1"
+      },
+      "cache": { "disabled": true }
+    },
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "env": {
+        "NODE_VERSION": "20.19.4",
+        "YARN_IGNORE_ENGINES": "1"
+      }
+    },
+    "preview": {
+      "distribution": "internal",
+      "env": {
+        "NODE_VERSION": "20.19.4",
+        "YARN_IGNORE_ENGINES": "1"
+      }
+    },
+    "production": {
+      "autoIncrement": true,
+      "android": { "buildType": "app-bundle" },
+      "env": {
+        "NODE_VERSION": "20.19.4",
+        "YARN_IGNORE_ENGINES": "1"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
